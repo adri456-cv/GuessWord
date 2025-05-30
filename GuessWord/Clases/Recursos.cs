@@ -4,13 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using System.Windows.Forms;
+
 
 namespace GuessWord.Clases
 {
     public static class Recursos
     {
         public static List<string> listadepalabras;
-        static string ruta = "palabras.txt";
+        public static string ruta = Path.Combine(Application.StartupPath, "Recursos", "palabras_wordle_simples.txt");
         public static List<string> Historial;
 
         public static void InicializarPalabras()

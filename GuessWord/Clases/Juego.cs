@@ -19,10 +19,10 @@ namespace GuessWord.Clases
             Attempts = 0;
             Recursos.Historial.Add(palabra);
         }
+
         public bool IsGameOver()
         {
             return Attempts >= MaxAttempts;
         }
-        
     }
 }
